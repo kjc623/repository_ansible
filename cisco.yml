@@ -3,14 +3,14 @@
 
 
   tasks:
-      - name: Ensure ipv4 address is configured on Loopback888
-        nxos_ip_interface:
-        interface: Loopback888
-        transport: cli
-        version: v4
-        state: present
-        addr: 10.1.1.1
-        mask: 32
+    - name: Ensure ipv4 address is configured on Loopback888
+      nxos_ip_interface:
+      interface: Loopback888
+      transport: cli
+      version: v4
+      state: present
+      addr: 10.1.1.1
+      mask: 32
 
 
 
