@@ -5,8 +5,9 @@
   tasks:
     - name: Set interface IPv4 address
       cisco.nxos.nxos_l3_interface:
-        name: Loopback888
-        ipv4: 10.1.1.1/32
+      - name: Loopback888
+        ipv4:
+        - address: 10.1.1.1/32
 
 
 
