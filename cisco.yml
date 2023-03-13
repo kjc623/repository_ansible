@@ -3,6 +3,6 @@
   become: yes
 
   tasks:
-    - name: Gather legacy facts
-      cisco.nxos.nxos_facts:
-       gather_subset: all
+     - name: Gather legacy facts
+       cisco.nxos.nxos_facts:
+         gather_subset: all
