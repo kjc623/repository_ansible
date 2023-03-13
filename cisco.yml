@@ -2,7 +2,8 @@
 - hosts: routers
 
   tasks:
-    - name: Collect NXOS facts
+    - name: Collect NXOS Facts
       cisco.nxos.nxos_facts:
-        gather_subset: all
+         gather_subset:
+            - config
 
