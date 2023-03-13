@@ -2,6 +2,6 @@
 - hosts: routers
   become: 'yes'
   tasks:
-    - name: Gather all legacy facts
+
       cisco.nxos.nxos_facts:
         gather_subset: all
