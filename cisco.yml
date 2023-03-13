@@ -1,7 +1,8 @@
 ---
 - hosts: routers
-  become: 'yes'
-  tasks:
 
+  tasks:
+    - name: Collect NXOS facts
       cisco.nxos.nxos_facts:
         gather_subset: all
+
