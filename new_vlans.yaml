@@ -4,7 +4,7 @@
 
   tasks:
     - name:
-      cisco.nxos.nxos_vlans:
+      cisco.nxos.nxos_vlan:
        config:
          - vlan_id: 5
            name: DATA
