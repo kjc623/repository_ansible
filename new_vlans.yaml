@@ -3,7 +3,7 @@
   become: yes
 
   tasks:
-    - name: Override running-config of all vlans with provided config
+    - name:
       cisco.nxos.nxos_vlans:
        config:
          - vlan_id: 5
