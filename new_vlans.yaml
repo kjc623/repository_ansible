@@ -1,10 +1,14 @@
 ---
-- name: Override running-config of all vlans with provided config
-  nxos_vlans:
-    config:
-      - vlan_id: 5
-        name: DATA
-        state: active
-      - vlan_id: 10
-        name: VOIP
-        state: active
+- hosts: routers
+  become: yes
+
+  tasks:
+    - name: Override running-config of all vlans with provided config
+      cisco.nxos.nxos_vlans:
+       config:
+         - vlan_id: 5
+           name: DATA
+           state: active
+         - vlan_id: 10
+           name: VOIP
+           state: active
